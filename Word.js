@@ -15,6 +15,7 @@ function Word(_array){
         Letter.guess();
     }
 }
+module.exports.Word = Word;
 let newLetter = new Letter("Hello")
 console.log(newLetter)
 
