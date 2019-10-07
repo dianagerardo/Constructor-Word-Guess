@@ -1,4 +1,7 @@
-var inquirer = require("inquirer");
+
+let letters = require("./Letter.js");
+let Letter = letters.Letter;
+
 // * **Word.js**: Contains a constructor, Word that depends on the Letter constructor. This is used to create an object representing the current word the user is attempting to guess. That means the constructor should define:
 function Word(_array){
     //   * An array of `new` Letter objects representing the letters of the underlying word
@@ -12,6 +15,8 @@ function Word(_array){
         Letter.guess();
     }
 }
+let newLetter = new Letter("Hello")
+console.log(newLetter)
 
 
 

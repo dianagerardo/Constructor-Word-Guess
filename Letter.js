@@ -1,4 +1,3 @@
-var inquirer = require("inquirer");
 // * **Letter.js**: Contains a constructor, Letter. This constructor should be able to either display an underlying character or a blank placeholder (such as an underscore), depending on whether or not the user has guessed the letter. That means the constructor should define:
 function Letter(_char, _bool){
     //   * A string value to store the underlying character for the letter
@@ -15,7 +14,7 @@ function Letter(_char, _bool){
     }
 }
 
-
+module.exports.Letter = Letter;
 
 
 
