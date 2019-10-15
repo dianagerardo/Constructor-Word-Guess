@@ -8,7 +8,9 @@ function Word(_array){
     this.array = _array;
     //   * A function that returns a string representing the word. This should call the function on each letter object (the first function defined in `Letter.js`) that displays the character or an underscore and concatenate those together.
     this.word = function(){
-
+        
+        Letter.letter();
+        
     }
     //   * A function that takes a character as an argument and calls the guess function on each letter object (the second function defined in `Letter.js`)
     this.arg = function(){
@@ -16,8 +18,7 @@ function Word(_array){
     }
 }
 module.exports.Word = Word;
-let newLetter = new Letter("Hello")
-console.log(newLetter)
+
 
 
 
